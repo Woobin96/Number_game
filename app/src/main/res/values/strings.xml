@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RandomButton</string>
+
+    <!-- 메인 작업    -->
+    <string name="Welcome">어서오세요 환영합니다</string>
+    <string name="game_start">게임시작하려면 아래 버튼을 눌러주세요</string>
+</resources>
