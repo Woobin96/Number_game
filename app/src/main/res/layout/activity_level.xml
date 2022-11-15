@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeveUI.LevelActivity">
+
+    <LinearLayout
+        android:id="@+id/level_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        android:padding="2dp">
+
+        <Button
+            android:id="@+id/level_btn01"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/levelbg"
+            android:layout_marginRight="4dp"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/level_btn02"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/levelbg"
+            android:layout_marginRight="4dp"
+            android:text="2"/>
+
+        <Button
+            android:id="@+id/level_btn03"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/levelbg"
+            android:text="3"/>
+
+        <Button
+            android:id="@+id/level_btn04"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/levelbg"
+            android:text="4"/>
+
+        <Button
+            android:id="@+id/level_btn05"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/levelbg"
+            android:text="5"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/level_lin"
+        android:src="@drawable/level"/>
+
+</RelativeLayout>

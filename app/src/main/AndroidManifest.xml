@@ -14,10 +14,13 @@
         android:theme="@style/Theme.RandomButton"
         tools:targetApi="31">
         <activity
-            android:name=".HardRandomApp"
+            android:name=".LeveUI.LevelActivity"
             android:exported="false" />
         <activity
-            android:name=".RandomApp"
+            android:name=".Game_UI.RandomApp"
+            android:exported="false" />
+        <activity
+            android:name=".Game_UI.HardRandomApp"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -1,16 +1,22 @@
-package com.koban.randombutton;
+package com.koban.randombutton.Game_UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.ActionMode;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.koban.randombutton.MainActivity;
+import com.koban.randombutton.R;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -18,10 +24,11 @@ import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class HardRandomApp extends AppCompatActivity {
+public class RandomApp extends AppCompatActivity {
 
     private Button btnRetry;
     private Button[] m_EzBtns = new Button[30];
+
     private TextView m_NumberGuide;
     private TextView tv_Clear;
     private TextView tv_Timer;
@@ -38,10 +45,15 @@ public class HardRandomApp extends AppCompatActivity {
     // 눌러야 할 번호
     private int num = 1;
 
+    private MainActivity mainActivity = null;
+
+
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hard_random_app);
+        setContentView(R.layout.activity_random_app);
+
         btnRetry = findViewById(R.id.reset_btn);
         m_NumberGuide = findViewById(R.id.tv_num);
         tv_Clear = findViewById(R.id.clear);
@@ -49,7 +61,7 @@ public class HardRandomApp extends AppCompatActivity {
         tv_Timer = findViewById(R.id.ez_timer);
 
         // 애니메이션
-        animation = AnimationUtils.loadAnimation(HardRandomApp.this, R.anim.testan);
+        animation = AnimationUtils.loadAnimation(RandomApp.this, R.anim.testan);
 
         ArrayList<Integer> arrayList = new ArrayList<>();
         for(int i = 1; i < 31; i ++){
@@ -59,22 +71,12 @@ public class HardRandomApp extends AppCompatActivity {
         // 배열위치 섞기
         Collections.shuffle(arrayList);
 
-
         for(int i = 0; i < m_EzBtns.length; i++){
             int p = 0;
             m_EzBtns[i] = findViewById(R.id.ez_btn_01 + i);
-//            Log.e("qqqq", m_EzBtns[i] + "");
-//            Log.e("aaaa", arrayList.get(i) + "");
-
             m_EzBtns[i].setText(arrayList.get(i) + "");
             m_EzBtns[i].setTag(arrayList.get(i) + "");
-
-            // 애니메이션 무한 루프
-            animation.setRepeatCount(Animation.INFINITE);
-            m_EzBtns[i].startAnimation(animation);
         }
-
-
 
         // pass 버튼
         btnRetry.setOnClickListener(new View.OnClickListener() {
@@ -151,6 +153,8 @@ public class HardRandomApp extends AppCompatActivity {
 
 //            mTimer.cancel();
             mTimerTask.cancel();
+
+//            mainActivity.setEnable();
         }
     }
 
@@ -179,4 +183,5 @@ public class HardRandomApp extends AppCompatActivity {
         };
         mTimer.schedule(mTimerTask, 0, 1000);
     }
+
 }
