@@ -9,13 +9,24 @@
         <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/drawable/gamebtn.xml" value="0.3945" />
         <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3945" />
         <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/drawable/levelbg.xml" value="0.315" />
+        <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/drawable/levle04.xml" value="0.315" />
         <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/drawable/mainback.xml" value="0.315" />
         <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/drawable/testani.xml" value="0.315" />
         <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/layout/activity_game_guide.xml" value="0.31302083333333336" />
         <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/layout/activity_hard_random_app.xml" value="0.2984375" />
         <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/layout/activity_level.xml" value="0.31302083333333336" />
+        <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/layout/activity_level01.xml" value="0.31302083333333336" />
+        <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/layout/activity_level02.xml" value="0.31302083333333336" />
+        <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/layout/activity_level04.xml" value="0.31302083333333336" />
+        <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/layout/activity_level05.xml" value="0.31302083333333336" />
+        <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/layout/activity_level_01.xml" value="0.31302083333333336" />
+        <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/layout/activity_level_03.xml" value="0.31302083333333336" />
         <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/layout/activity_random_app.xml" value="0.33" />
+        <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/mipmap-anydpi-v26/MainGame.xml" value="0.316" />
+        <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.316" />
+        <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/mipmap-anydpi-v26/maingame.xml" value="0.316" />
+        <entry key="..\:/99. solo/koban_project/Random_number_game/RandomButton/app/src/main/res/mipmap-anydpi-v26/maingame_round.xml" value="0.316" />
       </map>
     </option>
   </component>

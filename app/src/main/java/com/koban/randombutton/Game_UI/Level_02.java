@@ -2,29 +2,29 @@ package com.koban.randombutton.Game_UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.ActionMode;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Adapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.koban.randombutton.MainActivity;
+import com.koban.randombutton.LeveUI.LevelActivity;
 import com.koban.randombutton.R;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class RandomApp extends AppCompatActivity {
+public class Level_02 extends AppCompatActivity {
 
     private Button btnRetry;
     private Button[] m_EzBtns = new Button[30];
@@ -42,17 +42,18 @@ public class RandomApp extends AppCompatActivity {
 
     private Animation animation ;
 
+    private Adapter adapter = null;
+    private HashMap<String, String> mKey = new HashMap<>();
+
     // 눌러야 할 번호
     private int num = 1;
 
-    private MainActivity mainActivity = null;
 
-
-    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_random_app);
+        setContentView(R.layout.activity_level02);
+
 
         btnRetry = findViewById(R.id.reset_btn);
         m_NumberGuide = findViewById(R.id.tv_num);
@@ -61,7 +62,7 @@ public class RandomApp extends AppCompatActivity {
         tv_Timer = findViewById(R.id.ez_timer);
 
         // 애니메이션
-        animation = AnimationUtils.loadAnimation(RandomApp.this, R.anim.testan);
+        animation = AnimationUtils.loadAnimation(Level_02.this, R.anim.treeanim);
 
         ArrayList<Integer> arrayList = new ArrayList<>();
         for(int i = 1; i < 31; i ++){
@@ -76,12 +77,25 @@ public class RandomApp extends AppCompatActivity {
             m_EzBtns[i] = findViewById(R.id.ez_btn_01 + i);
             m_EzBtns[i].setText(arrayList.get(i) + "");
             m_EzBtns[i].setTag(arrayList.get(i) + "");
+
+            // 애니메이션 무한 루프
+            animation.setRepeatCount(Animation.INFINITE);
+            m_EzBtns[i].startAnimation(animation);
         }
 
         // pass 버튼
         btnRetry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(Level_02.this, LevelActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("level_01", "level_01");
+                intent.putExtras(bundle);
+                startActivity(intent);
+
+//                intent.putExtra("level_01", "level_01");
+//                startActivityForResult(intent, 0);
+                Log.e("a1", "pass 1");
 
                 linearLayout.setVisibility(View.VISIBLE);
                 tv_Clear.setVisibility(View.GONE);
@@ -109,7 +123,7 @@ public class RandomApp extends AppCompatActivity {
             }
         });
 
-    } // on Create
+    } // on
 
     // 30개의 버튼들
     public void clickBtn (View v) {
@@ -151,10 +165,7 @@ public class RandomApp extends AppCompatActivity {
             m_Timer_sec = -1;
             m_Timer_min = 0;
 
-//            mTimer.cancel();
             mTimerTask.cancel();
-
-//            mainActivity.setEnable();
         }
     }
 
@@ -176,6 +187,9 @@ public class RandomApp extends AppCompatActivity {
                     @Override
                     public void run() {
                         tv_Timer.setText(minute + " : " + second);
+                        if (m_Timer_min >= 1) {
+                            tv_Timer.setTextColor(Color.parseColor("#FF3636"));
+                        }
                     }
                 });
 
@@ -183,5 +197,4 @@ public class RandomApp extends AppCompatActivity {
         };
         mTimer.schedule(mTimerTask, 0, 1000);
     }
-
 }

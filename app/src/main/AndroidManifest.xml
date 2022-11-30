@@ -7,20 +7,29 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/main_icon"
+        android:label="@string/title"
+        android:roundIcon="@mipmap/main_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.RandomButton"
         tools:targetApi="31">
         <activity
+            android:name=".Game_UI.Level_05"
+            android:exported="false" />
+        <activity
+            android:name=".Game_UI.Level_04"
+            android:exported="false" />
+        <activity
+            android:name=".Game_UI.Level_02"
+            android:exported="false" />
+        <activity
             android:name=".LeveUI.LevelActivity"
             android:exported="false" />
         <activity
-            android:name=".Game_UI.RandomApp"
+            android:name=".Game_UI.Level_01"
             android:exported="false" />
         <activity
-            android:name=".Game_UI.HardRandomApp"
+            android:name=".Game_UI.Level_03"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -31,6 +40,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7150020580371346~1759725721"/>
     </application>
 
 </manifest>

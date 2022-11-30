@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game_UI.Level_02"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!--    TODO 첫째줄    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ez_btn_01"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_02"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_03"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_04"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_05"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:onClick="clickBtn"/>
+    </LinearLayout>
+
+    <!--    TODO 둘째줄    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ez_btn_06"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_07"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_08"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_09"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_10"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:onClick="clickBtn"/>
+    </LinearLayout>
+
+    <!--    TODO 셋째줄    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ez_btn_11"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_12"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_13"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_14"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_15"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:onClick="clickBtn"/>
+    </LinearLayout>
+
+    <!--    TODO 넷째줄    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ez_btn_16"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_17"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_18"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_19"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_20"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:onClick="clickBtn"/>
+    </LinearLayout>
+
+    <!--    TODO 다섯째줄    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ez_btn_21"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_22"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_23"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_24"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_25"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:onClick="clickBtn"/>
+    </LinearLayout>
+
+    <!--    TODO 여섯째줄    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ez_btn_26"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_27"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_28"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_29"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:layout_marginEnd="6dp"
+            android:onClick="clickBtn"/>
+
+        <Button
+            android:id="@+id/ez_btn_30"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnevent"
+            android:onClick="clickBtn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="타이머 시간"
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/ez_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00 : 00"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/touch_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:text="눌러야 할 번호 : "/>
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FF4848"
+            android:text="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FF4848"
+        android:text="(☞ﾟヮﾟ)☞ Clear ☜(ﾟヮﾟ☜)"
+        android:visibility="gone"/>
+
+
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="PASS"
+        android:enabled="false"/>
+
+
+</LinearLayout>

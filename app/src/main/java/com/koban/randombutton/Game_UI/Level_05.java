@@ -20,7 +20,7 @@ import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class HardRandomApp extends AppCompatActivity {
+public class Level_05 extends AppCompatActivity {
 
     private Button btnRetry;
     private Button[] m_EzBtns = new Button[30];
@@ -36,6 +36,8 @@ public class HardRandomApp extends AppCompatActivity {
     private int m_Timer_sec = -1;
 
     private Animation animation ;
+    private Animation animation_sub ;
+
 
     // 눌러야 할 번호
     private int num = 1;
@@ -43,7 +45,7 @@ public class HardRandomApp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hard_random_app);
+        setContentView(R.layout.activity_level05);
         btnRetry = findViewById(R.id.reset_btn);
         m_NumberGuide = findViewById(R.id.tv_num);
         tv_Clear = findViewById(R.id.clear);
@@ -51,7 +53,9 @@ public class HardRandomApp extends AppCompatActivity {
         tv_Timer = findViewById(R.id.ez_timer);
 
         // 애니메이션
-        animation = AnimationUtils.loadAnimation(HardRandomApp.this, R.anim.testan);
+        animation = AnimationUtils.loadAnimation(Level_05.this, R.anim.level05);
+        animation_sub = AnimationUtils.loadAnimation(Level_05.this, R.anim.gone);
+
 
         ArrayList<Integer> arrayList = new ArrayList<>();
         for(int i = 1; i < 31; i ++){
@@ -73,7 +77,12 @@ public class HardRandomApp extends AppCompatActivity {
 
             // 애니메이션 무한 루프
             animation.setRepeatCount(Animation.INFINITE);
-            m_EzBtns[i].startAnimation(animation);
+            animation_sub.setRepeatCount(Animation.INFINITE);
+            if (i % 2 == 0) {
+                m_EzBtns[i].startAnimation(animation_sub);
+            } else {
+                m_EzBtns[i].startAnimation(animation);
+            }
         }
 
 
@@ -174,6 +183,9 @@ public class HardRandomApp extends AppCompatActivity {
                     @Override
                     public void run() {
                         tv_Timer.setText(minute + " : " + second);
+                        if (m_Timer_min >= 1) {
+                            tv_Timer.setTextColor(Color.parseColor("#FF3636"));
+                        }
                     }
                 });
 
