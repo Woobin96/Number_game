@@ -84,15 +84,15 @@ public class Level_01 extends AppCompatActivity {
         btnRetry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Level_01.this, LevelActivity.class);
-                Bundle bundle = new Bundle();
-                bundle.putString("level_01", "level_01");
-                intent.putExtras(bundle);
-                startActivity(intent);
-
-//                intent.putExtra("level_01", "level_01");
-//                startActivityForResult(intent, 0);
-                Log.e("a1", "pass 1");
+//                Intent intent = new Intent(Level_01.this, LevelActivity.class);
+//                Bundle bundle = new Bundle();
+//                bundle.putString("level_01", "level_01");
+//                intent.putExtras(bundle);
+//                startActivity(intent);
+//
+////                intent.putExtra("level_01", "level_01");
+////                startActivityForResult(intent, 0);
+//                Log.e("a1", "pass 1");
 
                 linearLayout.setVisibility(View.VISIBLE);
                 tv_Clear.setVisibility(View.GONE);
